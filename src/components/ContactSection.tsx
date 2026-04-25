@@ -100,7 +100,7 @@ export function ContactSection() {
             <CardContent sx={{ p: { xs: 2.5, sm: 3 } }}>
               <Stack spacing={2.5}>
                 <TextField
-                  label="Name"
+                  label="Full name"
                   name="name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
