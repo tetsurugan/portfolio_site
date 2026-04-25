@@ -1,0 +1,24 @@
+/* Global tweaks — MUI theme owns most styling */
+:root {
+  color-scheme: dark;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+}
+
+/* Sticky header offset for hash / in-page links */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid rgba(94, 184, 176, 0.6);
+  outline-offset: 2px;
+}
