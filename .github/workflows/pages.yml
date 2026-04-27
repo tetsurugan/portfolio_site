@@ -27,10 +27,14 @@ jobs:
         with:
           node-version: '20'
           cache: npm
-      - name: Install and build
-        run: |
-          npm ci
-          npm run build
+      # Many CI images set NODE_ENV=production, which makes `npm ci` skip devDependencies.
+      # Then `tsc` / `vite` are missing and the build fails in under a second.
+      - name: Install dependencies
+        run: npm ci
+        env:
+          NODE_ENV: development
+      - name: Build
+        run: npm run build
       - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
