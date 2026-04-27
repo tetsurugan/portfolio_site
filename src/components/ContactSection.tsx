@@ -73,7 +73,7 @@ export function ContactSection() {
                 </Link>
                 <Button
                   component="a"
-                  href={siteConfig.resumePdfPath}
+                  href={siteConfig.resumePdfUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   startIcon={<DescriptionIcon />}

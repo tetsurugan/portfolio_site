@@ -40,7 +40,7 @@ export function ResumeSection({ onDownload }: Props) {
               <Button
                 size="large"
                 component="a"
-                href={siteConfig.resumePdfPath}
+                href={siteConfig.resumePdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 startIcon={<OpenInNewIcon />}

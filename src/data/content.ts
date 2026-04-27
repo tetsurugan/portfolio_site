@@ -19,8 +19,8 @@ export const siteConfig = {
   email: 'malcolmtbenton@gmail.com',
   github: 'https://github.com/tetsurugan',
   linkedin: 'https://www.linkedin.com/in/malcolm-benton/',
-  /** Resume PDF — served from `public/resume/` at site root */
-  resumePdfPath: '/resume/Malcolm-Benton-26-Resume.pdf',
+  /** Resume PDF — served from `public/resume/`; `base` from Vite config is prepended for GitHub Pages */
+  resumePdfUrl: `${import.meta.env.BASE_URL}resume/Malcolm-Benton-26-Resume.pdf`,
 } as const
 
 export type ProjectLink = { label: string; href: string; variant?: 'github' | 'live' | 'case' }

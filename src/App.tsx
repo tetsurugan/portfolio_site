@@ -17,8 +17,8 @@ function App() {
   }, [])
 
   const openResume = useCallback(() => {
-    // Same file as in siteConfig — add PDF under public/ and update resumePdfPath in src/data/content.ts
-    window.open(siteConfig.resumePdfPath, '_blank', 'noopener,noreferrer')
+    // Same file as in siteConfig — add PDF under public/ and name in siteConfig.resumePdfUrl
+    window.open(siteConfig.resumePdfUrl, '_blank', 'noopener,noreferrer')
   }, [])
 
   return (

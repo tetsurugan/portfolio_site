@@ -39,7 +39,7 @@ export function FooterBar() {
               Email
             </Link>
             <Link
-              href={siteConfig.resumePdfPath}
+              href={siteConfig.resumePdfUrl}
               target="_blank"
               rel="noopener noreferrer"
               color="text.secondary"
