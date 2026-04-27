@@ -7,10 +7,12 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Narrowing permissions clears unspecified scopes; upload-pages-artifact needs `actions: write`.
 permissions:
+  actions: write
   contents: read
-  pages: write
   id-token: write
+  pages: write
 
 concurrency:
   group: pages
