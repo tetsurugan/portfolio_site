@@ -82,7 +82,7 @@ export const contactSection = {
   intro:
     'I’m currently looking for freelance opportunities, junior software engineering roles, and projects where I can contribute, grow, and keep building. If you want to talk about web apps, internal tools, or interactive systems, reach out.',
   formHint:
-    'Direct email is the fastest way to reach me. The form opens a message in your mail client. You can swap in a hosted form later if you prefer.',
+    'Direct email is the fastest way to reach me. This form opens your default mail app with your message pre-filled.',
 } as const
 
 export const projects: Project[] = [
@@ -104,7 +104,7 @@ export const projects: Project[] = [
       { label: 'GitHub', href: 'https://github.com/tetsurugan/Game_Engine', variant: 'github' },
       { label: 'Live Demo', href: 'https://tetsurugan.github.io/Game_Engine/', variant: 'live' },
     ],
-    image: undefined,
+    image: `${import.meta.env.BASE_URL}projects/pov-project.png`,
     featured: true,
   },
   {
@@ -125,7 +125,7 @@ export const projects: Project[] = [
       { label: 'GitHub', href: 'https://github.com/tetsurugan/your-thoughts-app', variant: 'github' },
       { label: 'Live Demo', href: 'https://your-thoughts-app.vercel.app', variant: 'live' },
     ],
-    image: undefined,
+    image: `${import.meta.env.BASE_URL}projects/your-thoughts.png`,
     featured: false,
   },
   {
@@ -146,7 +146,7 @@ export const projects: Project[] = [
       { label: 'GitHub', href: 'https://github.com/tetsurugan/employee-leave-management-system', variant: 'github' },
       { label: 'Live Demo', href: 'https://tetsurugan.github.io/employee-leave-management-system/', variant: 'live' },
     ],
-    image: undefined,
+    image: `${import.meta.env.BASE_URL}projects/employee-leave-management.png`,
     featured: false,
   },
 ]
